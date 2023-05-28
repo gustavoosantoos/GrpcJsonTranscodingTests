@@ -1,5 +1,7 @@
+using System.Threading.Tasks;
 using Grpc.Core;
 using GrpcTranscoding;
+using Microsoft.Extensions.Logging;
 
 namespace GrpcTranscoding.Services;
 
