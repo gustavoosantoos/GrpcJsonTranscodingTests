@@ -22,6 +22,9 @@ builder.WebHost.ConfigureKestrel(options =>
 
 // Add services to the container.
 builder.Services.AddGrpc().AddJsonTranscoding();
+builder.Services.AddGrpcReflection();
+
+builder.Services.AddSwaggerGen();
 builder.Services.AddGrpcSwagger();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -36,6 +39,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
 });
 
+app.MapGrpcReflectionService();
 app.MapGrpcService<GreeterService>();
 app.MapGet("greeter/{name}", (string name) => Results.Ok(new
 {
