@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/gustavosantos/Dev/GrpcTranscoding/GrpcTranscoding/GrpcTranscoding.csproj": {}
+  },
+  "projects": {
+    "/Users/gustavosantos/Dev/GrpcTranscoding/GrpcTranscoding/GrpcTranscoding.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gustavosantos/Dev/GrpcTranscoding/GrpcTranscoding/GrpcTranscoding.csproj",
+        "projectName": "GrpcTranscoding",
+        "projectPath": "/Users/gustavosantos/Dev/GrpcTranscoding/GrpcTranscoding/GrpcTranscoding.csproj",
+        "packagesPath": "/Users/gustavosantos/.nuget/packages/",
+        "outputPath": "/Users/gustavosantos/Dev/GrpcTranscoding/GrpcTranscoding/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gustavosantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/8.0.100-preview.4.23260.5/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.52.0, )"
+            },
+            "Microsoft.AspNetCore.Grpc.JsonTranscoding": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.AspNetCore.Grpc.Swagger": {
+              "target": "Package",
+              "version": "[0.3.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-preview.4.23260.5/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
